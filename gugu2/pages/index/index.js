@@ -8,18 +8,17 @@ Page({
     array: '',
     scrollTop: 100,
   
-
-
   },
 
   touchAdd: function (e) {  //点击按钮的时候 页面跳转到设置任务界面 希望在设置任务
     var item = {            //界面的参数能够回传以此生成每一个任务的小视图
-      top: 'section',
+      top: 'tasksection',
       down: 'block'
     }
+    /*
     wx.navigateTo({
       url: '/pages/task/task'
-    })
+    })*/
     arraylist.push(item)
     this.setData({
       addPic: '/pic/addHl.png',

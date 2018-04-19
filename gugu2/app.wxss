@@ -43,14 +43,25 @@ page{
   margin-top: 30rpx;
   text-align: center;
   align-items: center;
+ 
 }
+.tasksection{
+  flex:1;
+  margin-bottom: 30rpx;
+  margin-top: 30rpx;
+  text-align: center;
+  align-items: center;
+  display: inline-block;
+}
+
 .body{
  
 }
 .block{
   background-color: yellow;
-  height:40px;
+  height:60px;
   width:600px;
+
 }
 
 
