@@ -1,0 +1,7 @@
+<!--pages/task/task.wxml-->
+<view class='page'> 
+
+<view class='section'>
+<button bindtap='okTask'> ok </button>
+</view>
+</view>
