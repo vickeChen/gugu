@@ -1,17 +1,23 @@
-
 <view class='page container'>
 
   <view class="title_img">
     <image src='https://o97mkvfjm.qnssl.com/logo.png' bindtap='' style='width:100px;height:100px'></image>
   </view>
-  <view class='body'>
-    <scroll-view scroll-y style="height: 300px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-top="{{scrollTop}}" inertia>
+  <view class='body' style='height:58% ;width:100%'>
+    <scroll-view scroll-y style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-top="{{scrollTop}}" inertia>
       <view wx:for="{{array}}">
-      <scroll-view scroll-x style='height:60px; width:300px' bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-left='200'>
-        <view class='{{item.top}}'>
-          <view class='{{item.down}}'>sss</view>
+        <view class='taskbar'>
+          <scroll-view scroll-x style='height:60px; width:80% ' bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-left='0'>
+            <!--
+            <view class='{{item.top}}'>
+              <view class='{{item.down}}'>sss</view>
+            </view>-->
+
+            <view class='yellowgreen taskblock'></view>
+            <view class='red taskblock'></view>
+            <view class='blue taskblock' style='text-align:center; width:30%'><image src='/pic/delete.png' style='width:60px; height:60px'></image></view>
+          </scroll-view>
         </view>
-      </scroll-view>
       </view>
     </scroll-view>
   </view>
@@ -20,6 +26,4 @@
       <image src='{{addPic}}' bindtouchstart='touchAdd' style='width:50px; height:50px' bindtouchend='cancelAdd'></image>
     </view>
   </view>
-  </view>
-
-
+</view>

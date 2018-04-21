@@ -20,7 +20,7 @@ page{
     font-size: 32rpx;
     font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
     overflow: hidden;
-    background: url('http://localhost:3000/index') no-repeat;
+    background: url('http://img.mp.itc.cn/upload/20161023/7f4d84f3a2284654bad28ef12468f731.gif') no-repeat;
     background-size: cover;
 }
 
@@ -41,7 +41,7 @@ page{
   flex:1;
   margin-bottom: 30rpx;
   margin-top: 30rpx;
-  text-align: center;
+
   align-items: center;
  
 }
@@ -78,4 +78,26 @@ page{
 }
 .end_btn::after{
   border: 10px;
+}
+
+.red{
+  background: red;
+}
+
+.yellow{
+  background: yellow;
+}
+
+.blue{
+  background: blue;
+}
+
+.yellowgreen{
+  background: yellowgreen;
+}
+
+.taskblock{
+  display: inline-block;
+  width:50%;
+  height:60px;
 }

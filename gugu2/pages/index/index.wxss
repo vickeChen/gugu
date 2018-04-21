@@ -19,3 +19,14 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.taskbar{
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  width:100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
