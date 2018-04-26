@@ -1,24 +1,29 @@
 <view class='page container'>
-
+  <!--
   <view class="title_img">
     <image src='https://o97mkvfjm.qnssl.com/logo.png' bindtap='' style='width:100px;height:100px'></image>
-  </view>
-  <view class='body' style='height:58% ;width:100%'>
-    <scroll-view scroll-y style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-top="{{scrollTop}}" inertia  >
+  </view>-->
+  <view class='body' style='height:80% ;width:100%'>
+    <scroll-view scroll-y style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-top="{{scrollTop}}" inertia>
       <view wx:for="{{array}}">
-        <view class='taskbar' >
-          <scroll-view scroll-x style='height:60px; width:80% ' bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-left='scrollleft' scroll-into-view='{{toView}}' scroll-with-animation="true"  >
-            <view class='yellowgreen taskblock' id='task'>{{item.listId}}</view>
-            <view class='red taskblock'></view>
-            <view class='blue taskblock' style='text-align:center; width:30%'  ><image src='/pic/delete.png' style='width:60px; height:60px' catchtap='deleteTask' id='{{item.listId}}'></image></view>
+        <view class='taskbar'>
+          <scroll-view scroll-x style='width:100% ' bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-left='scrollleft' scroll-into-view='{{toView}}' scroll-with-animation="true">
+            <view class='task1 taskblock' id='task'>
+              <text>{{item.taskName}}</text>
+            </view>
+            <view class='task2 taskblock'>还有{{item.endTime}}天</view>
+            <view class='task3 taskblock' style='text-align:center; width:30%'>
+              <image src='/pic/delete.png' style='width:60px; height:60px;' catchtap='deleteTask' id='{{item.listId}}'></image>
+            </view>
+
           </scroll-view>
         </view>
       </view>
     </scroll-view>
   </view>
   <view class='end'>
-    <view class='section'>
-      <image src='{{addPic}}' bindtouchstart='touchAdd' style='width:50px; height:50px' bindtouchend='cancelAdd' ></image>
+    <view class='section add'>
+      <image src='{{addPic}}' bindtouchstart='touchAdd' style='width:40px; height:40px' bindtouchend='cancelAdd'></image>
     </view>
   </view>
   <!--

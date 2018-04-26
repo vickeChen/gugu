@@ -9,18 +9,21 @@ page{
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
   box-sizing: border-box;
   flex:1;
   min-height: 100%;
 } 
 
 .page {
+  
     min-height: 100%;
-    flex: 1;
+ 
     font-size: 32rpx;
     font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
     overflow: hidden;
-    background: url('http://img.mp.itc.cn/upload/20161023/7f4d84f3a2284654bad28ef12468f731.gif') no-repeat;
+   /* background: url('http://img.mp.itc.cn/upload/20161023/7f4d84f3a2284654bad28ef12468f731.gif') no-repeat;*/
+    background-color: #87CEFA;
     background-size: cover;
 }
 
@@ -55,7 +58,8 @@ page{
 }
 
 .body{
- 
+ margin-bottom: 20px;
+ align-items: center;
 }
 .block{
   background-color: yellow;
@@ -96,8 +100,3 @@ page{
   background: yellowgreen;
 }
 
-.taskblock{
-  display: inline-block;
-  width:50%;
-  height:60px;
-}
